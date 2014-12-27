@@ -29,3 +29,10 @@ console.log(file)
 })
 })
 */
+
+
+var pract = {
+  return function(dirName, fileName, callback()) {
+
+  }
+}
