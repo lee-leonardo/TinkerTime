@@ -9,7 +9,7 @@ var fileType = process.argv.slice(3).toString();
 
 fs.readdir(filePath, function(err, files) {
   if (err) { throw err; }
-  // console.log("File List: "+files);
+  console.log("File List: "+files);
   for (entry in files) {
     // console.log(files[entry]);
     // console.log(path.extname(files[entry]));
