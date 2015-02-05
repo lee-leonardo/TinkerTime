@@ -1,0 +1,1 @@
+!function(){var e=angular.module("application",[]);e.controller("LearnController",function(){this.user=user});var a=[{firstName:"Leo",lastName:"Lee",gender:"Male",age:24},{firstName:"Rebekah",lastName:"Lester",gender:"Female",age:22}]}();

@@ -1,0 +1,16 @@
+<!doctype html>
+<html ng-app="application">
+<head>
+  <script type="text/javascript" src="/bower_components/angular/angular.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+</head>
+<body ng-controller="LearnController as application">
+  <h1>{{"Angular" + " " + "Expressions"}}</h1>
+
+  <div ng-repeat="">
+    <h2>{{ "Welcome!" }}</h2>
+    <h3>{{ application.user.firstName + " " + application.user.lastName }}</h3>
+    <p>{{ "Age: "+ application.user.age }}</p>
+  </div>
+</body>
+</html>
