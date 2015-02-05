@@ -1,3 +1,4 @@
+<!-- Angular is Controller by directives prefixed with 'ng-' -->
 <!doctype html>
 <html ng-app="application">
 <head>
@@ -7,10 +8,11 @@
 <body ng-controller="LearnController as application">
   <h1>{{"Angular" + " " + "Expressions"}}</h1>
 
-  <div ng-repeat="">
+  <div ng-repeat="user in application.users">
     <h2>{{ "Welcome!" }}</h2>
-    <h3>{{ application.user.firstName + " " + application.user.lastName }}</h3>
-    <p>{{ "Age: "+ application.user.age }}</p>
+    <h3>{{ user.firstName + " " + user.lastName }}</h3>
+    <p ng-show="user.gender == 'Male'">{{ "Age: "+ user.age }}</p>
+    <p ng-hide="user.age < 20">This is some screened content</p>
   </div>
 </body>
 </html>

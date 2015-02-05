@@ -1,7 +1,7 @@
 (function (){
   var app = angular.module('application', []);
   app.controller('LearnController', function () {
-    this.user = user;
+    this.users = users;
   });
 
   var users = [
@@ -16,6 +16,12 @@
       lastName: "Lester",
       gender: "Female",
       age: 22
+    },
+    {
+      firstName: "Ben",
+      lastName: "Duyker",
+      gender: "Male",
+      age: 16
     }
   ];
 })();
