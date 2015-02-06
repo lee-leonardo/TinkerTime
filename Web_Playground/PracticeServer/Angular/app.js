@@ -22,6 +22,30 @@
       lastName: "Duyker",
       gender: "Male",
       age: 16
+    },
+    {
+      firstName: "Richard",
+      lastName: "Lee",
+      gender: "Male",
+      age: 20
+    },
+    {
+      firstName: "Alex",
+      lastName: "Lee",
+      gender: "Male",
+      age: 23
+    },
+    {
+      firstName: "Mario",
+      lastName: "Kart",
+      gender: "Female",
+      age: 64
+    },
+    {
+      firstName: "Misubishi",
+      lastName: "Lancer",
+      gender: "Female",
+      age: 2
     }
   ];
 })();
