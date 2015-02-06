@@ -7,13 +7,22 @@
 </head>
 <body ng-controller="LearnController as application">
   <h1>{{"Angular" + " " + "Expressions"}}</h1>
-
+  <h2>{{ "Welcome!"}}</h2>
   <div ng-repeat="user in application.users | limitTo:5">
-    <h2>{{ "Welcome!"}}</h2>
     <h3>{{ user.firstName + " " + user.lastName }}</h3>
     <p ng-show="user.gender == 'Male'">{{ "Age: "+ user.age }}</p>
     <p ng-hide="user.age < 20">This is some screened content</p>
     <!-- <img ng-src="{{}}"/> --> <!-- Syntax for image... pretty weird... and inconsistent. -->
+    <div ng-controller="TabController as tabs" ng-show="user.private">
+      <ul>
+        <li>
+          <h6>Hobbies</h6>
+          <ul ng-repeat="hobby in user.hobbies">
+            <li>{{hobby}}</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
   </div>
 </body>
 </html>
