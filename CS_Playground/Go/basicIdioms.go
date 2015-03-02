@@ -3,6 +3,7 @@ package main
 import (
   "fmt"
   "math"
+  "runtime"
   )
 
 func sqrt(x float64) string {
@@ -20,6 +21,42 @@ func pow(x, n, lim float64) float64 {
     fmt.Printf("%g >= %g\n", v, lim)
   }
   return lim
+}
+
+//Newton's Square Root formula
+func Sqrt(x float64) float64 {
+	z := float64(1)
+	z = z - ((z * z) - x)/(2 * z)
+	return z
+}
+
+//Switch
+func awesome(name string) {
+  fmt.Print("Go is running on: ")
+
+  //Switches break unless a fallthrough is used.
+  switch os := runtime.GOOS; os {
+    case "darwin":
+      fmt.Print("OS X")
+    case "linux":
+      fmt.Print("Linux")
+    case "nofallthrough":
+    //There is no automatic fallthrough, will break automatically here.
+    case "uhh":
+      fallthrough
+    default:
+      fmt.Printf("%s", os)
+  }
+
+  i := 3
+  //swith true will evaluate truthy statements.
+  switch {
+    case i == 0:
+    case i <= 1:
+    case i >= 0:
+    default:
+      fmt.Println("ha")
+  }
 }
 
 func main() {

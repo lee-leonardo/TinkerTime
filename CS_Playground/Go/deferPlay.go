@@ -1,0 +1,16 @@
+package main
+
+import "fmt"
+
+func main() {
+  defer fmt.Println("world")
+
+  fmt.Println("hello ")
+
+  //Defer acts as if it is LIFO
+  for i := 0; i< 10; i++ {
+    defer fmt.Println(i)
+  }
+
+  fmt.Println("finished")
+}
