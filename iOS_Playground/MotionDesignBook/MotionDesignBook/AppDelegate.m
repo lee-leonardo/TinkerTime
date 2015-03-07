@@ -24,7 +24,7 @@ typedef enum : NSUInteger {
     // Override point for customization after application launch.
     
     
-    NSUInteger *selected = VCAnimationUIKit;
+    NSUInteger *selected = VCAnimationJNW;
     
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     
