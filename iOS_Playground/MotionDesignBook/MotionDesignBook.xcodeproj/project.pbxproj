@@ -13,6 +13,7 @@
 		38005BED1AABAD3400D5D44F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38005BEB1AABAD3400D5D44F /* Main.storyboard */; };
 		38005BEF1AABAD3400D5D44F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38005BEE1AABAD3400D5D44F /* Images.xcassets */; };
 		38005BF21AABAD3400D5D44F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38005BF01AABAD3400D5D44F /* LaunchScreen.xib */; };
+		38E798741AAEC4AD00BB9981 /* JNWAlertExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E798731AAEC4AD00BB9981 /* JNWAlertExample.m */; };
 		38E964C71AABB926006EB5C1 /* JNWAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E964C61AABB926006EB5C1 /* JNWAnimationViewController.m */; };
 		38E964CA1AABB945006EB5C1 /* FBPopUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E964C91AABB945006EB5C1 /* FBPopUIViewController.m */; };
 		FEEE3521A4D40FC7978B0113 /* libPods-MotionDesignBook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A21D8322EEA7C5B4FF5D1747 /* libPods-MotionDesignBook.a */; };
@@ -29,6 +30,8 @@
 		38005BEC1AABAD3400D5D44F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		38005BEE1AABAD3400D5D44F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		38005BF11AABAD3400D5D44F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		38E798721AAEC4AD00BB9981 /* JNWAlertExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNWAlertExample.h; sourceTree = "<group>"; };
+		38E798731AAEC4AD00BB9981 /* JNWAlertExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNWAlertExample.m; sourceTree = "<group>"; };
 		38E964C51AABB926006EB5C1 /* JNWAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNWAnimationViewController.h; sourceTree = "<group>"; };
 		38E964C61AABB926006EB5C1 /* JNWAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNWAnimationViewController.m; sourceTree = "<group>"; };
 		38E964C81AABB945006EB5C1 /* FBPopUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBPopUIViewController.h; sourceTree = "<group>"; };
@@ -107,6 +110,8 @@
 			children = (
 				38E964C51AABB926006EB5C1 /* JNWAnimationViewController.h */,
 				38E964C61AABB926006EB5C1 /* JNWAnimationViewController.m */,
+				38E798721AAEC4AD00BB9981 /* JNWAlertExample.h */,
+				38E798731AAEC4AD00BB9981 /* JNWAlertExample.m */,
 			);
 			name = JNW;
 			sourceTree = "<group>";
@@ -247,6 +252,7 @@
 				38E964C71AABB926006EB5C1 /* JNWAnimationViewController.m in Sources */,
 				38005BE71AABAD3400D5D44F /* AppDelegate.m in Sources */,
 				38005BE41AABAD3400D5D44F /* main.m in Sources */,
+				38E798741AAEC4AD00BB9981 /* JNWAlertExample.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

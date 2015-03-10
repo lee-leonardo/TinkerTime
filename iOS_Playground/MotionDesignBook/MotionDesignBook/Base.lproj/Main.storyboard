@@ -21,10 +21,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--Animation View Controller-->
+        <!--Alert Example-->
         <scene sceneID="oZR-Vu-CL9">
             <objects>
-                <viewController storyboardIdentifier="JNW" id="cPr-50-N8h" customClass="JNWAnimationViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JNW" id="cPr-50-N8h" customClass="JNWAlertExample" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="un7-G5-8MV"/>
                         <viewControllerLayoutGuide type="bottom" id="WhH-eN-r0h"/>
