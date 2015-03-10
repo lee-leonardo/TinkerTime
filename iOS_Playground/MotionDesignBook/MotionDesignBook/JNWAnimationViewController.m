@@ -25,7 +25,7 @@
     UIView *purpleSquare = [[UIView alloc] initWithFrame:CGRectMake(50, 200, 100, 100)];
     purpleSquare.backgroundColor = [UIColor purpleColor];
     
-    UIView *greenSquare = [[UIView alloc] initWithFrame:CGRectMake(50, 350, 100, 100)];
+    UIView *greenSquare = [[UIView alloc] initWithFrame:CGRectMake(50, 350, 50, 50)];
     greenSquare.backgroundColor = [UIColor greenColor];
     
     [self.view addSubview:redBall];
@@ -45,7 +45,8 @@
 //    [self affectsModelLayer:redBall]; //Since this changes the model layer at the end it seems like it transitioned to the new size.
     [self rotateSquare:purpleSquare];
     [self justXTranslate:redBall];
-    [self multipleAnimations: greenSquare];
+//    [self multipleAnimations: greenSquare];
+    [self rotatePop:greenSquare];
     
 }
 
@@ -141,7 +142,27 @@
 
 -(void)rotatePop:(UIView *)view
 {
+    JNWSpringAnimation *scale = [JNWSpringAnimation
+                                 animationWithKeyPath:@"transform.scale"];
+    scale.damping = 9;
+    scale.stiffness = 9;
+    scale.mass = 1;
+    scale.fromValue = @(1);
+    scale.toValue = @(2.0);
     
+    [view.layer addAnimation:scale forKey:scale.keyPath];
+    view.transform = CGAffineTransformScale(view.transform, 2.0, 2.0);
+    
+    JNWSpringAnimation *rotate = [JNWSpringAnimation
+                                  animationWithKeyPath:@"transform.rotation"];
+    rotate.damping = 5;
+    rotate.stiffness = 9;
+    rotate.mass = 4;
+    rotate.fromValue = @(0);
+    rotate.toValue = @(M_PI);
+    
+    [view.layer addAnimation:rotate forKey:rotate.keyPath];
+    view.transform = CGAffineTransformRotate(view.transform, M_PI);
 }
 
 @end
