@@ -18,19 +18,20 @@ typedef enum : NSUInteger {
     VCAnimationUIKit,
     VCAnimationJNW,
     VCAnimationPOP,
+    Alert,
 } VCAnimation;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    
     NSUInteger *selected = VCAnimationJNW;
-    
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-    
     switch ((int) selected) {
         case VCAnimationJNW:
             self.window.rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"JNW"];
+            break;
+        case Alert:
+            self.window.rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"Alert"];
             break;
 
         case VCAnimationPOP:
