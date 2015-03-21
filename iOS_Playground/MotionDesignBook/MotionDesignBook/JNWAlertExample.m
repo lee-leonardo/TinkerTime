@@ -18,8 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
-    self.view.alpha = 0.3f;
+    self.view.backgroundColor = [UIColor grayColor];
     
 }
 
@@ -30,11 +29,14 @@
     CGFloat alertDimension = 250;
     
     
-    CGRect alertViewFrame = CGRectMake(self.view.frame.size.width / 3, self.view.frame.size.height / 3, alertDimension, alertDimension);
+    CGRect alertViewFrame = CGRectMake(
+                                       (self.view.frame.size.width / 2) - (alertDimension / 2),
+                                       (self.view.frame.size.height / 2) - (alertDimension / 2),
+                                       alertDimension,
+                                       alertDimension
+                                       );
     UIView *alert = [[UIView alloc] initWithFrame:alertViewFrame];
-    alert.backgroundColor = [UIColor whiteColor];
-    //Interesting, investigate this!
-    //    alert.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"alert_box"]];
+    alert.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"alert_box"]];
     alert.alpha = 1.0f;
     alert.transform = CGAffineTransformMakeScale(1.2, 1.2);
     alert.layer.cornerRadius = 10;
@@ -47,10 +49,12 @@
     alert.layer.shadowRadius = 10.0f;
     [self.view addSubview:alert];
     
-    [self popIn:alert];
-    
 //    [self scaleIn:alert];
 //    [self scaleOut:alert];
+//    [self popIn:alert]; //Not working right... will visit.
+//    [self onScreen:alert andBackground:self.view];
+//    [self offScreen:alert andBackground:self.view];
+//    [self popUp:alert];
 
 }
 
@@ -69,7 +73,7 @@
     scale.toValue = @(1.0);
     
     [view.layer addAnimation:scale forKey:scale.keyPath];
-//    view.transform = CGAffineTransformMakeScale(1.0, 1.0);
+    view.transform = CGAffineTransformMakeScale(1.0, 1.0);
     
 }
 
@@ -97,7 +101,7 @@
 //    view.transform = CGAffineTransformMakeScale(0.25, 0.25);
 //    view.transform = CGAffineTransformTranslate(view.transform, 0, 600);
     //Concat
-    CGAffineTransform viewTransform = CGAffineTransformConcat(CGAffineTransformMakeScale(0.25, 0.25), CGAffineTransformMakeTranslation(0, 600));
+    CGAffineTransform viewTransform = CGAffineTransformConcat(CGAffineTransformMakeScale(0.25, 0.25), CGAffineTransformMakeTranslation(0, self.view.frame.size.height / 2));
     view.transform = viewTransform;
     
 }

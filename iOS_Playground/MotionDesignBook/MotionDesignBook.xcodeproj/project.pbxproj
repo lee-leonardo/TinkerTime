@@ -13,6 +13,11 @@
 		38005BED1AABAD3400D5D44F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38005BEB1AABAD3400D5D44F /* Main.storyboard */; };
 		38005BEF1AABAD3400D5D44F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38005BEE1AABAD3400D5D44F /* Images.xcassets */; };
 		38005BF21AABAD3400D5D44F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38005BF01AABAD3400D5D44F /* LaunchScreen.xib */; };
+		38A666291ABDFDE600FC52E1 /* alert_box@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38A666281ABDFDE600FC52E1 /* alert_box@2x.png */; };
+		38A6662D1ABDFDF600FC52E1 /* app-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38A6662A1ABDFDF600FC52E1 /* app-bg@2x.png */; };
+		38A6662E1ABDFDF600FC52E1 /* map-arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38A6662B1ABDFDF600FC52E1 /* map-arrow@2x.png */; };
+		38A6662F1ABDFDF600FC52E1 /* map-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38A6662C1ABDFDF600FC52E1 /* map-icon@2x.png */; };
+		38A666331ABDFE3700FC52E1 /* JBExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A666321ABDFE3700FC52E1 /* JBExampleViewController.m */; };
 		38E798741AAEC4AD00BB9981 /* JNWAlertExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E798731AAEC4AD00BB9981 /* JNWAlertExample.m */; };
 		38E964C71AABB926006EB5C1 /* JNWAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E964C61AABB926006EB5C1 /* JNWAnimationViewController.m */; };
 		38E964CA1AABB945006EB5C1 /* FBPopUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E964C91AABB945006EB5C1 /* FBPopUIViewController.m */; };
@@ -30,6 +35,12 @@
 		38005BEC1AABAD3400D5D44F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		38005BEE1AABAD3400D5D44F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		38005BF11AABAD3400D5D44F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		38A666281ABDFDE600FC52E1 /* alert_box@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alert_box@2x.png"; sourceTree = "<group>"; };
+		38A6662A1ABDFDF600FC52E1 /* app-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-bg@2x.png"; sourceTree = "<group>"; };
+		38A6662B1ABDFDF600FC52E1 /* map-arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map-arrow@2x.png"; sourceTree = "<group>"; };
+		38A6662C1ABDFDF600FC52E1 /* map-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map-icon@2x.png"; sourceTree = "<group>"; };
+		38A666311ABDFE3700FC52E1 /* JBExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBExampleViewController.h; sourceTree = "<group>"; };
+		38A666321ABDFE3700FC52E1 /* JBExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBExampleViewController.m; sourceTree = "<group>"; };
 		38E798721AAEC4AD00BB9981 /* JNWAlertExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNWAlertExample.h; sourceTree = "<group>"; };
 		38E798731AAEC4AD00BB9981 /* JNWAlertExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNWAlertExample.m; sourceTree = "<group>"; };
 		38E964C51AABB926006EB5C1 /* JNWAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNWAnimationViewController.h; sourceTree = "<group>"; };
@@ -96,6 +107,18 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		38A666301ABDFDFB00FC52E1 /* JBExample */ = {
+			isa = PBXGroup;
+			children = (
+				38A6662A1ABDFDF600FC52E1 /* app-bg@2x.png */,
+				38A6662B1ABDFDF600FC52E1 /* map-arrow@2x.png */,
+				38A6662C1ABDFDF600FC52E1 /* map-icon@2x.png */,
+				38A666311ABDFE3700FC52E1 /* JBExampleViewController.h */,
+				38A666321ABDFE3700FC52E1 /* JBExampleViewController.m */,
+			);
+			name = JBExample;
+			sourceTree = "<group>";
+		};
 		38E964C21AABB8EC006EB5C1 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,10 +131,12 @@
 		38E964C31AABB8F6006EB5C1 /* JNW */ = {
 			isa = PBXGroup;
 			children = (
+				38A666281ABDFDE600FC52E1 /* alert_box@2x.png */,
 				38E964C51AABB926006EB5C1 /* JNWAnimationViewController.h */,
 				38E964C61AABB926006EB5C1 /* JNWAnimationViewController.m */,
 				38E798721AAEC4AD00BB9981 /* JNWAlertExample.h */,
 				38E798731AAEC4AD00BB9981 /* JNWAlertExample.m */,
+				38A666301ABDFDFB00FC52E1 /* JBExample */,
 			);
 			name = JNW;
 			sourceTree = "<group>";
@@ -201,9 +226,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38A6662D1ABDFDF600FC52E1 /* app-bg@2x.png in Resources */,
 				38005BED1AABAD3400D5D44F /* Main.storyboard in Resources */,
+				38A666291ABDFDE600FC52E1 /* alert_box@2x.png in Resources */,
+				38A6662E1ABDFDF600FC52E1 /* map-arrow@2x.png in Resources */,
 				38005BF21AABAD3400D5D44F /* LaunchScreen.xib in Resources */,
 				38005BEF1AABAD3400D5D44F /* Images.xcassets in Resources */,
+				38A6662F1ABDFDF600FC52E1 /* map-icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +278,7 @@
 			files = (
 				38005BEA1AABAD3400D5D44F /* UIKitAnimationsViewController.m in Sources */,
 				38E964CA1AABB945006EB5C1 /* FBPopUIViewController.m in Sources */,
+				38A666331ABDFE3700FC52E1 /* JBExampleViewController.m in Sources */,
 				38E964C71AABB926006EB5C1 /* JNWAnimationViewController.m in Sources */,
 				38005BE71AABAD3400D5D44F /* AppDelegate.m in Sources */,
 				38005BE41AABAD3400D5D44F /* main.m in Sources */,

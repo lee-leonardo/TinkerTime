@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
         <!--Kit Animations View Controller-->
@@ -39,10 +39,10 @@
             </objects>
             <point key="canvasLocation" x="955" y="337"/>
         </scene>
-        <!--View Controller-->
+        <!--Animation View Controller-->
         <scene sceneID="4M5-l8-sUN">
             <objects>
-                <viewController storyboardIdentifier="Alert" id="3tR-Kh-GUc" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Alert" id="3tR-Kh-GUc" customClass="JNWAnimationViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="i50-3G-sMA"/>
                         <viewControllerLayoutGuide type="bottom" id="ZYG-P8-eur"/>
@@ -56,6 +56,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CGX-vT-kCi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="955" y="1011"/>
+        </scene>
+        <!--Example View Controller-->
+        <scene sceneID="qRx-9Q-Ofd">
+            <objects>
+                <viewController storyboardIdentifier="Map" id="r16-GF-Ftm" customClass="JBExampleViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XGn-Ji-Gf0"/>
+                        <viewControllerLayoutGuide type="bottom" id="YQ3-hR-u0w"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hz2-EB-9D1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="47h-q1-WEM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1647" y="1011"/>
         </scene>
         <!--PopUI View Controller-->
         <scene sceneID="5sV-84-UAV">
@@ -73,7 +91,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pIU-KR-yEa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1659" y="339"/>
+            <point key="canvasLocation" x="1647" y="319"/>
         </scene>
     </scenes>
 </document>
