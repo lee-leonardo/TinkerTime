@@ -102,4 +102,75 @@
     
 }
 
+-(void)onScreen:(UIView *)view andBackground:(UIView *)background
+{
+    [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        background.alpha = 0.2f;
+        view.alpha =  1.0f;
+    } completion:NULL];
+    
+    JNWSpringAnimation * scale = [JNWSpringAnimation animationWithKeyPath:@"transform.scale"];
+    scale.damping = 12;
+    scale.stiffness = 12;
+    scale.mass = 1;
+    scale.fromValue = @(0.25);
+    scale.toValue = @(1.0);
+    
+    [view.layer addAnimation:scale forKey:scale.keyPath];
+    view.transform = CGAffineTransformMakeScale(1.0, 1.0);
+    
+    JNWSpringAnimation *translate = [JNWSpringAnimation animationWithKeyPath:@"transform.translation.y"];
+    translate.damping = 15;
+    translate.stiffness = 15;
+    translate.mass = 1;
+    translate.fromValue = @(600);
+    translate.toValue = @(0);
+    
+    [background.layer addAnimation:translate forKey:translate.keyPath];
+    background.transform = CGAffineTransformTranslate(background.transform, 0, 0);
+    
+}
+
+-(void)offScreen:(UIView *)view andBackground:(UIView *)background
+{
+    [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        view.alpha = 0.0f;
+        background.alpha = 0.0f;
+    } completion:NULL];
+    
+    JNWSpringAnimation *scale = [JNWSpringAnimation animationWithKeyPath:@"transform.scale"];
+    scale.damping = 17;
+    scale.stiffness = 17;
+    scale.mass = 1;
+    scale.fromValue = @(1.0);
+    scale.toValue = @(5.0);
+    
+    [view.layer addAnimation:scale forKey:scale.keyPath];
+    view.transform = CGAffineTransformScale(CGAffineTransformIdentity, 0.5, 0.5);
+    
+    JNWSpringAnimation *translate = [JNWSpringAnimation animationWithKeyPath:@"transform.tranlation.y"];
+    translate.damping = 4;
+    translate.stiffness = 4;
+    translate.mass = 1;
+    translate.fromValue = @(0);
+    translate.toValue = @(600);
+    
+    [view.layer addAnimation:translate forKey:translate.keyPath];
+    view.transform = CGAffineTransformTranslate(view.transform, 0, 600);
+    
+}
+
+-(void)popUp:(UIView *)view
+{
+    JNWSpringAnimation *scale = [JNWSpringAnimation animationWithKeyPath:@"transform.scale"];
+    scale.damping = 32;
+    scale.stiffness = 450;
+    scale.mass = 2.4;
+    scale.fromValue = @(0);
+    scale.toValue = @(1.0);
+    
+    [view.layer addAnimation:scale forKey:scale.keyPath];
+    view.transform = CGAffineTransformScale(CGAffineTransformIdentity, 1.0, 1.0);
+}
+
 @end
