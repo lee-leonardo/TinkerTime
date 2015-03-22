@@ -1,0 +1,2 @@
+-- This'll help you figure out where your at in haskell's compiler
+-- :set prompt "ghci> "
