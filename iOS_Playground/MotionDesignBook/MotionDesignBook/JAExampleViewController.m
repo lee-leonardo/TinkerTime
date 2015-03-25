@@ -50,19 +50,19 @@
     firstRow.image = [UIImage imageNamed:@"1st-row"];
     [self.view addSubview:firstRow];
     
-    UIImageView *secondRow = [[UIImageView alloc] initWithFrame:CGRectMake(0, initialX+rowHeight, windowWidth, rowHeight)];
+    UIImageView *secondRow = [[UIImageView alloc] initWithFrame:CGRectMake(windowWidth, initialX+rowHeight, windowWidth, rowHeight)];
     secondRow.image = [UIImage imageNamed:@"2nd-row"];
     [self.view addSubview:secondRow];
     
-    UIImageView *thirdRow = [[UIImageView alloc] initWithFrame:CGRectMake(0, initialX+rowHeight*2, windowWidth, rowHeight)];
+    UIImageView *thirdRow = [[UIImageView alloc] initWithFrame:CGRectMake(windowWidth, initialX+(rowHeight*2), windowWidth, rowHeight)];
     thirdRow.image = [UIImage imageNamed:@"3rd-row"];
     [self.view addSubview:thirdRow];
     
-    UIImageView *fourthRow = [[UIImageView alloc] initWithFrame:CGRectMake(0, initialX+rowHeight*3, windowWidth, rowHeight)];
+    UIImageView *fourthRow = [[UIImageView alloc] initWithFrame:CGRectMake(windowWidth, initialX+(rowHeight*3), windowWidth, rowHeight)];
     fourthRow.image = [UIImage imageNamed:@"4th-row"];
     [self.view addSubview:fourthRow];
     
-    UIImageView *fifthRow = [[UIImageView alloc] initWithFrame:CGRectMake(0, initialX+rowHeight*4, windowWidth, rowHeight)];
+    UIImageView *fifthRow = [[UIImageView alloc] initWithFrame:CGRectMake(windowWidth, initialX+(rowHeight*4), windowWidth, rowHeight)];
     fifthRow.image = [UIImage imageNamed:@"5th-row"];
     [self.view addSubview:fifthRow];
     
@@ -73,21 +73,40 @@
     
     CGFloat initialDelay = 1.0f;
     CGFloat stutter = 0.3f;
+    CGFloat duration = 0.6;
     
-    [UIView animateWithDuration:2.1 delay:initialDelay usingSpringWithDamping:0.6 initialSpringVelocity:0.0 options:0 animations:^{
+    [UIView animateWithDuration:duration delay:initialDelay usingSpringWithDamping:0.6 initialSpringVelocity:0.0 options:0 animations:^{
         [arrowView setFrame:CGRectMake(0, 0, windowWidth, 45)];
     } completion:NULL];
     
-    [UIView animateWithDuration:2.1 delay:(initialDelay + (1 * stutter)) usingSpringWithDamping:0.6 initialSpringVelocity:0.0 options:0 animations:^{
+    [UIView animateWithDuration:duration delay:(initialDelay + (1 * stutter)) usingSpringWithDamping:0.6 initialSpringVelocity:0.0 options:0 animations:^{
         [ministryView setFrame:CGRectMake(0, 57, windowWidth, 28)];
     } completion:NULL];
     
     //Other Button rows
-    [UIView animateWithDuration:2.1 delay:(initialDelay + (2*stutter)) usingSpringWithDamping:0.6 initialSpringVelocity:0 options:0 animations:^{
+    [UIView animateWithDuration:duration delay:(initialDelay + (2*stutter)) usingSpringWithDamping:0.6 initialSpringVelocity:0 options:0 animations:^{
         [addButton setFrame:CGRectMake(0, 102, windowWidth, rowHeight)];
     } completion:NULL];
     
-    //...
+    [UIView animateWithDuration:duration delay:(initialDelay + (3*stutter)) usingSpringWithDamping:0.6 initialSpringVelocity:0 options:0 animations:^{
+        [firstRow setFrame:CGRectMake(0, 170, windowWidth, rowHeight)];
+    } completion:NULL];
+    
+    [UIView animateWithDuration:duration delay:(initialDelay + (4*stutter)) usingSpringWithDamping:0.6 initialSpringVelocity:0 options:0 animations:^{
+        [secondRow setFrame:CGRectMake(0, 170+80, windowWidth, rowHeight)];
+    } completion:NULL];
+    
+    [UIView animateWithDuration:duration delay:(initialDelay + (5*stutter)) usingSpringWithDamping:0.6 initialSpringVelocity:0 options:0 animations:^{
+        [thirdRow setFrame:CGRectMake(0, 170+180, windowWidth, rowHeight)];
+    } completion:NULL];
+    
+    [UIView animateWithDuration:duration delay:(initialDelay + (6*stutter)) usingSpringWithDamping:0.6 initialSpringVelocity:0 options:0 animations:^{
+        [fourthRow setFrame:CGRectMake(0, 170+240, windowWidth, rowHeight)];
+    } completion:NULL];
+    
+    [UIView animateWithDuration:duration delay:(initialDelay + (7*stutter)) usingSpringWithDamping:0.6 initialSpringVelocity:0 options:0 animations:^{
+        [fifthRow setFrame:CGRectMake(0, 170+320, windowWidth, rowHeight)];
+    } completion:NULL];
     
 }
 
