@@ -5,6 +5,7 @@ import "fmt"
 func main() {
   slicesBasic()
   usingRanges()
+  bitShifting()
 }
 
 func printSlice(s string, x []int) {
@@ -25,14 +26,24 @@ func slicesBasic() {
   x = append(x, 0)
   printSlice("x", x)
   //Multiple elements in append
-  x = append(a, 2, 3, 4)
+  x = append(z, 2, 3, 4)
   printSlice("x", x)
 }
 
 func usingRanges() {
-  var pow = []int{,1,2,3,4,5,6,7,8,9,10}
+  var pow = []int{1,2,3,4,5,6,7,8,9,10}
 
   for i, v := range pow {
-    fmt.Printf("2*%d = %n", i, v)
+    fmt.Printf("2**%d = %d\n", i, v)
+  }
+}
+
+func bitShifting() {
+  pow := make([]int, 10)
+  for i:= range pow {
+    pow[i] = 1 << uint(i)
+  }
+  for _,value := range pow {
+    fmt.Printf("%d\n", value)
   }
 }
