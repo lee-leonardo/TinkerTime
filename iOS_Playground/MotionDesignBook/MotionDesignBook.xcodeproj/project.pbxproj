@@ -24,6 +24,7 @@
 		3819196C1ABE1E0700EF3A02 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 381919621ABE1E0700EF3A02 /* background@2x.png */; };
 		3819196D1ABE1E0700EF3A02 /* ministry@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 381919631ABE1E0700EF3A02 /* ministry@2x.png */; };
 		381919701ABE1E1700EF3A02 /* JAExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3819196F1ABE1E1700EF3A02 /* JAExampleViewController.m */; };
+		3847A70D1AC3C39E00CB4D82 /* TableRefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3847A70C1AC3C39E00CB4D82 /* TableRefreshViewController.m */; };
 		38A666291ABDFDE600FC52E1 /* alert_box@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38A666281ABDFDE600FC52E1 /* alert_box@2x.png */; };
 		38A6662D1ABDFDF600FC52E1 /* app-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38A6662A1ABDFDF600FC52E1 /* app-bg@2x.png */; };
 		38A6662E1ABDFDF600FC52E1 /* map-arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38A6662B1ABDFDF600FC52E1 /* map-arrow@2x.png */; };
@@ -58,6 +59,8 @@
 		381919631ABE1E0700EF3A02 /* ministry@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ministry@2x.png"; sourceTree = "<group>"; };
 		3819196E1ABE1E1700EF3A02 /* JAExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAExampleViewController.h; sourceTree = "<group>"; };
 		3819196F1ABE1E1700EF3A02 /* JAExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAExampleViewController.m; sourceTree = "<group>"; };
+		3847A70B1AC3C39E00CB4D82 /* TableRefreshViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableRefreshViewController.h; sourceTree = "<group>"; };
+		3847A70C1AC3C39E00CB4D82 /* TableRefreshViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableRefreshViewController.m; sourceTree = "<group>"; };
 		38A666281ABDFDE600FC52E1 /* alert_box@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alert_box@2x.png"; sourceTree = "<group>"; };
 		38A6662A1ABDFDF600FC52E1 /* app-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-bg@2x.png"; sourceTree = "<group>"; };
 		38A6662B1ABDFDF600FC52E1 /* map-arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map-arrow@2x.png"; sourceTree = "<group>"; };
@@ -112,6 +115,7 @@
 				38005BE61AABAD3400D5D44F /* AppDelegate.m */,
 				38E964C21AABB8EC006EB5C1 /* UIKit */,
 				38E964C31AABB8F6006EB5C1 /* JNW */,
+				3847A70A1AC3C37200CB4D82 /* TableRefresh */,
 				38E964C41AABB8FD006EB5C1 /* Pop */,
 				38005BEB1AABAD3400D5D44F /* Main.storyboard */,
 				38005BEE1AABAD3400D5D44F /* Images.xcassets */,
@@ -147,6 +151,15 @@
 				3819196F1ABE1E1700EF3A02 /* JAExampleViewController.m */,
 			);
 			name = JA;
+			sourceTree = "<group>";
+		};
+		3847A70A1AC3C37200CB4D82 /* TableRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				3847A70B1AC3C39E00CB4D82 /* TableRefreshViewController.h */,
+				3847A70C1AC3C39E00CB4D82 /* TableRefreshViewController.m */,
+			);
+			name = TableRefresh;
 			sourceTree = "<group>";
 		};
 		38A666301ABDFDFB00FC52E1 /* JBExample */ = {
@@ -334,6 +347,7 @@
 				381919701ABE1E1700EF3A02 /* JAExampleViewController.m in Sources */,
 				38A666331ABDFE3700FC52E1 /* JBExampleViewController.m in Sources */,
 				38E964C71AABB926006EB5C1 /* JNWAnimationViewController.m in Sources */,
+				3847A70D1AC3C39E00CB4D82 /* TableRefreshViewController.m in Sources */,
 				38005BE71AABAD3400D5D44F /* AppDelegate.m in Sources */,
 				38005BE41AABAD3400D5D44F /* main.m in Sources */,
 				38E798741AAEC4AD00BB9981 /* JNWAlertExample.m in Sources */,

@@ -21,12 +21,13 @@ typedef enum : NSUInteger {
     Alert,
     MapExp,
     JA,
+    TableRefresh
 } VCAnimation;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    NSUInteger *selected = JA;
+    NSUInteger *selected = TableRefresh;
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     switch ((int) selected) {
         case VCAnimationJNW:
@@ -43,6 +44,10 @@ typedef enum : NSUInteger {
             break;
         case VCAnimationPOP:
             self.window.rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"POP"];
+            break;
+        case TableRefresh:
+            self.window.rootViewController = [storyboard
+                                              instantiateViewControllerWithIdentifier:@"TableRefresh"];
             break;
         default:
             break;
