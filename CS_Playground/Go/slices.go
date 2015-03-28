@@ -80,6 +80,7 @@ func slicesBasic() {
   printSlice("x", x)
 }
 
+//Ranges are a form of a for loop for iterating over slices/maps.
 func usingRanges() {
   var pow = []int{1,2,3,4,5,6,7,8,9,10}
 
@@ -89,11 +90,11 @@ func usingRanges() {
 }
 
 func bitShifting() {
-
   pow := make([]int, 10)
   for i:= range pow {
     pow[i] = 1 << uint(i)
   }
+  //Allows you to drop the iterator if you only care about the value.
   for _,value := range pow {
     fmt.Printf("%d\n", value)
   }
