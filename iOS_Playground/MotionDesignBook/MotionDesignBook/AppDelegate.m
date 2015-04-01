@@ -18,6 +18,7 @@ typedef enum : NSUInteger {
     VCAnimationUIKit,
     VCAnimationJNW,
     VCAnimationPOP,
+    FBPop2,
     Alert,
     MapExp,
     JA,
@@ -27,7 +28,7 @@ typedef enum : NSUInteger {
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    NSUInteger *selected = TableRefresh;
+    NSUInteger *selected = FBPop2;
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     switch ((int) selected) {
         case VCAnimationJNW:
@@ -48,6 +49,8 @@ typedef enum : NSUInteger {
         case TableRefresh:
             self.window.rootViewController = [storyboard
                                               instantiateViewControllerWithIdentifier:@"TableRefresh"];
+        case FBPop2:
+            self.window.rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"POP2"];
             break;
         default:
             break;
