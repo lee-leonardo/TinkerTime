@@ -24,6 +24,8 @@
 		3819196C1ABE1E0700EF3A02 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 381919621ABE1E0700EF3A02 /* background@2x.png */; };
 		3819196D1ABE1E0700EF3A02 /* ministry@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 381919631ABE1E0700EF3A02 /* ministry@2x.png */; };
 		381919701ABE1E1700EF3A02 /* JAExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3819196F1ABE1E1700EF3A02 /* JAExampleViewController.m */; };
+		382303E01AD0985100D0B443 /* DTCTestButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 382303DF1AD0985100D0B443 /* DTCTestButton.m */; };
+		382303E21AD0985700D0B443 /* gear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 382303E11AD0985700D0B443 /* gear@2x.png */; };
 		38371D141ACBA71C00FC64A0 /* FBPop2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38371D131ACBA71C00FC64A0 /* FBPop2ViewController.m */; };
 		3847A70D1AC3C39E00CB4D82 /* TableRefreshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3847A70C1AC3C39E00CB4D82 /* TableRefreshViewController.m */; };
 		38A666291ABDFDE600FC52E1 /* alert_box@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 38A666281ABDFDE600FC52E1 /* alert_box@2x.png */; };
@@ -60,6 +62,9 @@
 		381919631ABE1E0700EF3A02 /* ministry@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ministry@2x.png"; sourceTree = "<group>"; };
 		3819196E1ABE1E1700EF3A02 /* JAExampleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAExampleViewController.h; sourceTree = "<group>"; };
 		3819196F1ABE1E1700EF3A02 /* JAExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAExampleViewController.m; sourceTree = "<group>"; };
+		382303DE1AD0985100D0B443 /* DTCTestButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTCTestButton.h; sourceTree = "<group>"; };
+		382303DF1AD0985100D0B443 /* DTCTestButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTCTestButton.m; sourceTree = "<group>"; };
+		382303E11AD0985700D0B443 /* gear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gear@2x.png"; sourceTree = "<group>"; };
 		38371D121ACBA71C00FC64A0 /* FBPop2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBPop2ViewController.h; sourceTree = "<group>"; };
 		38371D131ACBA71C00FC64A0 /* FBPop2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBPop2ViewController.m; sourceTree = "<group>"; };
 		3847A70B1AC3C39E00CB4D82 /* TableRefreshViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableRefreshViewController.h; sourceTree = "<group>"; };
@@ -156,6 +161,16 @@
 			name = JA;
 			sourceTree = "<group>";
 		};
+		382303DD1AD0983600D0B443 /* ButtonTapped */ = {
+			isa = PBXGroup;
+			children = (
+				382303E11AD0985700D0B443 /* gear@2x.png */,
+				382303DE1AD0985100D0B443 /* DTCTestButton.h */,
+				382303DF1AD0985100D0B443 /* DTCTestButton.m */,
+			);
+			name = ButtonTapped;
+			sourceTree = "<group>";
+		};
 		3847A70A1AC3C37200CB4D82 /* TableRefresh */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +218,7 @@
 		38E964C41AABB8FD006EB5C1 /* Pop */ = {
 			isa = PBXGroup;
 			children = (
+				382303DD1AD0983600D0B443 /* ButtonTapped */,
 				38E964C81AABB945006EB5C1 /* FBPopUIViewController.h */,
 				38E964C91AABB945006EB5C1 /* FBPopUIViewController.m */,
 				38371D121ACBA71C00FC64A0 /* FBPop2ViewController.h */,
@@ -300,6 +316,7 @@
 				38A6662E1ABDFDF600FC52E1 /* map-arrow@2x.png in Resources */,
 				38005BF21AABAD3400D5D44F /* LaunchScreen.xib in Resources */,
 				3819196B1ABE1E0700EF3A02 /* arrow@2x.png in Resources */,
+				382303E21AD0985700D0B443 /* gear@2x.png in Resources */,
 				38005BEF1AABAD3400D5D44F /* Images.xcassets in Resources */,
 				381919691ABE1E0700EF3A02 /* add-button-pressed@2x.png in Resources */,
 				3819196C1ABE1E0700EF3A02 /* background@2x.png in Resources */,
@@ -354,6 +371,7 @@
 				38E964C71AABB926006EB5C1 /* JNWAnimationViewController.m in Sources */,
 				3847A70D1AC3C39E00CB4D82 /* TableRefreshViewController.m in Sources */,
 				38005BE71AABAD3400D5D44F /* AppDelegate.m in Sources */,
+				382303E01AD0985100D0B443 /* DTCTestButton.m in Sources */,
 				38371D141ACBA71C00FC64A0 /* FBPop2ViewController.m in Sources */,
 				38005BE41AABAD3400D5D44F /* main.m in Sources */,
 				38E798741AAEC4AD00BB9981 /* JNWAlertExample.m in Sources */,
