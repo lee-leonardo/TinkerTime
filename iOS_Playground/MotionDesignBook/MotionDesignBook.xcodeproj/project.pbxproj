@@ -36,6 +36,7 @@
 		38E798741AAEC4AD00BB9981 /* JNWAlertExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E798731AAEC4AD00BB9981 /* JNWAlertExample.m */; };
 		38E964C71AABB926006EB5C1 /* JNWAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E964C61AABB926006EB5C1 /* JNWAnimationViewController.m */; };
 		38E964CA1AABB945006EB5C1 /* FBPopUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E964C91AABB945006EB5C1 /* FBPopUIViewController.m */; };
+		38F594C51AD3A8EA00757AE4 /* HamburgerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F594C41AD3A8EA00757AE4 /* HamburgerButton.m */; };
 		FEEE3521A4D40FC7978B0113 /* libPods-MotionDesignBook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A21D8322EEA7C5B4FF5D1747 /* libPods-MotionDesignBook.a */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +82,8 @@
 		38E964C61AABB926006EB5C1 /* JNWAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JNWAnimationViewController.m; sourceTree = "<group>"; };
 		38E964C81AABB945006EB5C1 /* FBPopUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBPopUIViewController.h; sourceTree = "<group>"; };
 		38E964C91AABB945006EB5C1 /* FBPopUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBPopUIViewController.m; sourceTree = "<group>"; };
+		38F594C31AD3A8EA00757AE4 /* HamburgerButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HamburgerButton.h; sourceTree = "<group>"; };
+		38F594C41AD3A8EA00757AE4 /* HamburgerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HamburgerButton.m; sourceTree = "<group>"; };
 		7C1DD0E33FCBD2AB4E04DEB9 /* Pods-MotionDesignBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotionDesignBook.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MotionDesignBook/Pods-MotionDesignBook.debug.xcconfig"; sourceTree = "<group>"; };
 		86DD603C483A6FD0037C73A1 /* Pods-MotionDesignBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotionDesignBook.release.xcconfig"; path = "Pods/Target Support Files/Pods-MotionDesignBook/Pods-MotionDesignBook.release.xcconfig"; sourceTree = "<group>"; };
 		A21D8322EEA7C5B4FF5D1747 /* libPods-MotionDesignBook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MotionDesignBook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -218,6 +221,7 @@
 		38E964C41AABB8FD006EB5C1 /* Pop */ = {
 			isa = PBXGroup;
 			children = (
+				38F594C21AD3A8CB00757AE4 /* HamburgerButton */,
 				382303DD1AD0983600D0B443 /* ButtonTapped */,
 				38E964C81AABB945006EB5C1 /* FBPopUIViewController.h */,
 				38E964C91AABB945006EB5C1 /* FBPopUIViewController.m */,
@@ -225,6 +229,15 @@
 				38371D131ACBA71C00FC64A0 /* FBPop2ViewController.m */,
 			);
 			name = Pop;
+			sourceTree = "<group>";
+		};
+		38F594C21AD3A8CB00757AE4 /* HamburgerButton */ = {
+			isa = PBXGroup;
+			children = (
+				38F594C31AD3A8EA00757AE4 /* HamburgerButton.h */,
+				38F594C41AD3A8EA00757AE4 /* HamburgerButton.m */,
+			);
+			name = HamburgerButton;
 			sourceTree = "<group>";
 		};
 		563987916FAB46609D124E27 /* Frameworks */ = {
@@ -373,6 +386,7 @@
 				38005BE71AABAD3400D5D44F /* AppDelegate.m in Sources */,
 				382303E01AD0985100D0B443 /* DTCTestButton.m in Sources */,
 				38371D141ACBA71C00FC64A0 /* FBPop2ViewController.m in Sources */,
+				38F594C51AD3A8EA00757AE4 /* HamburgerButton.m in Sources */,
 				38005BE41AABAD3400D5D44F /* main.m in Sources */,
 				38E798741AAEC4AD00BB9981 /* JNWAlertExample.m in Sources */,
 			);

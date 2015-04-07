@@ -1,16 +1,23 @@
 //
-//  DTCTestButton.m
-//  Pop Tapped Button
+//  HamburgerButton.m
+//  MotionDesignBook
 //
-//
-// My copy of Rundles work
+//  Created by Leonardo Lee on 4/6/15.
+//  Copyright (c) 2015 Leonardo Lee. All rights reserved.
 //
 
-#import "DTCTestButton.h"
+#import "HamburgerButton.h"
 
-@implementation DTCTestButton
+@implementation HamburgerButton
 
-#pragma mark -
+/*
+// Only override drawRect: if you perform custom drawing.
+// An empty implementation adversely affects performance during animation.
+- (void)drawRect:(CGRect)rect {
+    // Drawing code
+}
+*/
+
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
     POPSpringAnimation *scale = [self pop_animationForKey:@"scale"]; //Grabbing the animation.
@@ -44,7 +51,7 @@
 }
 
 -(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
-
+    
     POPSpringAnimation *scale = [self pop_animationForKey:@"scale"];
     POPSpringAnimation *rotate = [self pop_animationForKey:@"rotate"];
     
@@ -76,6 +83,5 @@
     
     [super touchesEnded:touches withEvent:event];
 }
-
 
 @end
