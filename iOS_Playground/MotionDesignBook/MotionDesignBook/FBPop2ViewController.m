@@ -146,17 +146,151 @@
 //}
 
 -(void)didTapButton:(UIView *)view {
+    
+    POPSpringAnimation *topColor = [_top pop_animationForKey:@"topColor"];
+    POPSpringAnimation *bottomColor = [_bot pop_animationForKey:@"bottomColor"];
+    POPSpringAnimation *topRotate = [_top pop_animationForKey:@"topRotate"];
+    POPSpringAnimation *bottomRotate = [_bot pop_animationForKey:@"bottomRotate"];
+    POPSpringAnimation *topPosition = [_top pop_animationForKey:@"topPosition"];
+    POPSpringAnimation *bottomPosition = [_bot pop_animationForKey:@"bottomPosition"];
+    
     if (_hamButtonOpen) {
         _hamButtonOpen = NO;
+        
+        [UIView animateWithDuration:0.2 animations:^{
+            _mid.alpha = 1.0f;
+        }];
+        
+        if (topColor) {
+            topColor.toValue = [UIColor whiteColor];
+        } else {
+            topColor = [POPSpringAnimation animationWithPropertyNamed:kPOPViewBackgroundColor];
+            topColor.toValue = [UIColor whiteColor];
+            topColor.springBounciness = 0;
+            topColor.springSpeed = 18.0f;
+            
+            [_top pop_addAnimation:topColor forKey:@"topColor"];
+        }
+        
+        if (bottomColor) {
+            bottomColor.toValue = [UIColor whiteColor];
+        } else {
+            bottomColor = [POPSpringAnimation animationWithPropertyNamed:kPOPViewBackgroundColor];
+            bottomColor.toValue = [UIColor whiteColor];
+            bottomColor.springBounciness = 0;
+            bottomColor.springSpeed = 18.0f;
+            [_bot pop_addAnimation:bottomColor forKey:@"bottomColor"];
+        }
+        
+        //When affecting a layer, add the animation to the layer!
+        if (topRotate) {
+            topRotate.toValue = @(0);
+        } else {
+            topRotate = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerRotation];
+            topRotate.toValue = @(0);
+            topRotate.springBounciness = 11;
+            topRotate.springSpeed = 18.0f;
+            [_top.layer pop_addAnimation:topRotate forKey:@"topRotate"];
+        }
+        
+        if (bottomRotate) {
+            bottomRotate.toValue = @(0);
+        } else {
+            bottomRotate = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerRotation];
+            bottomRotate.toValue = @(0);
+            bottomRotate.springBounciness = 11;
+            bottomRotate.springSpeed = 18.0f;
+            [_bot.layer pop_addAnimation:bottomRotate forKey:@"bottomRotate"];
+        }
+        
+        if (topPosition) {
+            topPosition.toValue = @(0);
+        } else {
+            topPosition = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerTranslationY];
+            topPosition.toValue = @(0);
+            topPosition.springBounciness = 0;
+            topPosition.springSpeed = 18.0f;
+            [_top.layer pop_addAnimation:topPosition forKey:@"topPosition"];
+        }
+        
+        if (bottomPosition) {
+            bottomPosition.toValue = @(0);
+        } else {
+            bottomPosition = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerTranslationY];
+            bottomPosition.toValue = @(0);
+            bottomPosition.springBounciness = 0;
+            bottomPosition.springSpeed = 18.0f;
+            [_bot.layer pop_addAnimation:bottomPosition forKey:@"bottomPosition"];
+        }
+        
+    } else {
+        _hamButtonOpen = YES;
         
         [UIView animateWithDuration:0.2 animations:^{
             _mid.alpha = 0.0f;
         }];
         
+        if (topColor) {
+            topColor.toValue = [UIColor redColor];
+        } else {
+            topColor = [POPSpringAnimation animationWithPropertyNamed:kPOPViewBackgroundColor];
+            topColor.toValue = [UIColor redColor];
+            topColor.springBounciness = 0;
+            topColor.springSpeed = 18.0f;
+            
+            [_top pop_addAnimation:topColor forKey:@"topColor"];
+        }
         
+        if (bottomColor) {
+            bottomColor.toValue = [UIColor redColor];
+        } else {
+            bottomColor = [POPSpringAnimation animationWithPropertyNamed:kPOPViewBackgroundColor];
+            bottomColor.toValue = [UIColor redColor];
+            bottomColor.springBounciness = 0;
+            bottomColor.springSpeed = 18.0f;
+            [_bot pop_addAnimation:bottomColor forKey:@"bottomColor"];
+        }
         
-    } else {
-        _hamButtonOpen = YES;
+        //When affecting a layer, add the animation to the layer!
+        if (topRotate) {
+            topRotate.toValue = @(-M_PI/4);
+        } else {
+            topRotate = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerRotation];
+            topRotate.toValue = @(-M_PI/4);
+            topRotate.springBounciness = 11;
+            topRotate.springSpeed = 18.0f;
+            [_top.layer pop_addAnimation:topRotate forKey:@"topRotate"];
+        }
+        
+        if (bottomRotate) {
+            bottomRotate.toValue = @(M_PI/4);
+        } else {
+            bottomRotate = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerRotation];
+            bottomRotate.toValue = @(M_PI/4);
+            bottomRotate.springBounciness = 11;
+            bottomRotate.springSpeed = 18.0f;
+            [_bot.layer pop_addAnimation:bottomRotate forKey:@"bottomRotate"];
+        }
+        
+        if (topPosition) {
+            topPosition.toValue = @(29);
+        } else {
+            topPosition = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerTranslationY];
+            topPosition.toValue = @(29);
+            topPosition.springBounciness = 0;
+            topPosition.springSpeed = 18.0f;
+            [_top.layer pop_addAnimation:topPosition forKey:@"topPosition"];
+        }
+        
+        if (bottomPosition) {
+            bottomPosition.toValue = @(-29);
+        } else {
+            bottomPosition = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerTranslationY];
+            bottomPosition.toValue = @(-29);
+            bottomPosition.springBounciness = 0;
+            bottomPosition.springSpeed = 18.0f;
+            [_bot.layer pop_addAnimation:bottomPosition forKey:@"bottomPosition"];
+        }
     }
 }
 
