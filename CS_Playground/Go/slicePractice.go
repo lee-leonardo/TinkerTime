@@ -44,4 +44,7 @@ func sliceAppending() {
   for i := range slice {
     fmt.Println(i, slice[i])
   }
+
+  multiDim [][]int
+  fmt.Println(multiDim)
 }
