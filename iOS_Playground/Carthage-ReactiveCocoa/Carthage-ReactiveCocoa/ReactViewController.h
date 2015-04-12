@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
 
-@interface ViewController : UIViewController
+@interface ReactViewController : UIViewController
 
 
 @end

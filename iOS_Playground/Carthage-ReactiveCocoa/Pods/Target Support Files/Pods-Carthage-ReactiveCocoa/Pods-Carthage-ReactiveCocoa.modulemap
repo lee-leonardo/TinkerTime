@@ -1,0 +1,6 @@
+framework module Pods_Carthage_ReactiveCocoa {
+  umbrella header "Pods-Carthage-ReactiveCocoa-umbrella.h"
+
+  export *
+  module * { export * }
+}

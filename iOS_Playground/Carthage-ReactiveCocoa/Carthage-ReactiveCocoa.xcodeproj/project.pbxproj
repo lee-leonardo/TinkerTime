@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38A259161ADA483A00847BB1 /* ConventionalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A259151ADA483A00847BB1 /* ConventionalViewController.m */; };
 		38FD6B3D1AD7B6A00011C594 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FD6B3C1AD7B6A00011C594 /* main.m */; };
 		38FD6B401AD7B6A00011C594 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FD6B3F1AD7B6A00011C594 /* AppDelegate.m */; };
-		38FD6B431AD7B6A00011C594 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FD6B421AD7B6A00011C594 /* ViewController.m */; };
+		38FD6B431AD7B6A00011C594 /* ReactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FD6B421AD7B6A00011C594 /* ReactViewController.m */; };
 		38FD6B461AD7B6A00011C594 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38FD6B441AD7B6A00011C594 /* Main.storyboard */; };
 		38FD6B481AD7B6A00011C594 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38FD6B471AD7B6A00011C594 /* Images.xcassets */; };
 		38FD6B4B1AD7B6A00011C594 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38FD6B491AD7B6A00011C594 /* LaunchScreen.xib */; };
 		38FD6B571AD7B6A00011C594 /* Carthage_ReactiveCocoaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FD6B561AD7B6A00011C594 /* Carthage_ReactiveCocoaTests.m */; };
+		BA7FA609228235C2FF747296 /* Pods_Carthage_ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9083A5D14158FBC3C11CFA32 /* Pods_Carthage_ReactiveCocoa.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +29,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C0A412F5C145BE2BAAD095E /* Pods-Carthage-ReactiveCocoa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carthage-ReactiveCocoa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Carthage-ReactiveCocoa/Pods-Carthage-ReactiveCocoa.debug.xcconfig"; sourceTree = "<group>"; };
+		38A259141ADA483A00847BB1 /* ConventionalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConventionalViewController.h; sourceTree = "<group>"; };
+		38A259151ADA483A00847BB1 /* ConventionalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConventionalViewController.m; sourceTree = "<group>"; };
 		38FD6B371AD7B6A00011C594 /* Carthage-ReactiveCocoa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Carthage-ReactiveCocoa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38FD6B3B1AD7B6A00011C594 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38FD6B3C1AD7B6A00011C594 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		38FD6B3E1AD7B6A00011C594 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		38FD6B3F1AD7B6A00011C594 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		38FD6B411AD7B6A00011C594 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		38FD6B421AD7B6A00011C594 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		38FD6B411AD7B6A00011C594 /* ReactViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactViewController.h; sourceTree = "<group>"; };
+		38FD6B421AD7B6A00011C594 /* ReactViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactViewController.m; sourceTree = "<group>"; };
 		38FD6B451AD7B6A00011C594 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		38FD6B471AD7B6A00011C594 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		38FD6B4A1AD7B6A00011C594 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		38FD6B501AD7B6A00011C594 /* Carthage-ReactiveCocoaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Carthage-ReactiveCocoaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		38FD6B551AD7B6A00011C594 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38FD6B561AD7B6A00011C594 /* Carthage_ReactiveCocoaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Carthage_ReactiveCocoaTests.m; sourceTree = "<group>"; };
+		9083A5D14158FBC3C11CFA32 /* Pods_Carthage_ReactiveCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Carthage_ReactiveCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF6CF069D9186ABFEF2D1DF8 /* Pods-Carthage-ReactiveCocoa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carthage-ReactiveCocoa.release.xcconfig"; path = "Pods/Target Support Files/Pods-Carthage-ReactiveCocoa/Pods-Carthage-ReactiveCocoa.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA7FA609228235C2FF747296 /* Pods_Carthage_ReactiveCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,8 +71,8 @@
 		38A1A0941AD8B35700B89BFB /* Reactive Controller */ = {
 			isa = PBXGroup;
 			children = (
-				38FD6B411AD7B6A00011C594 /* ViewController.h */,
-				38FD6B421AD7B6A00011C594 /* ViewController.m */,
+				38FD6B411AD7B6A00011C594 /* ReactViewController.h */,
+				38FD6B421AD7B6A00011C594 /* ReactViewController.m */,
 			);
 			name = "Reactive Controller";
 			sourceTree = "<group>";
@@ -79,12 +87,23 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		38A259131ADA481F00847BB1 /* Conventional */ = {
+			isa = PBXGroup;
+			children = (
+				38A259141ADA483A00847BB1 /* ConventionalViewController.h */,
+				38A259151ADA483A00847BB1 /* ConventionalViewController.m */,
+			);
+			name = Conventional;
+			sourceTree = "<group>";
+		};
 		38FD6B2E1AD7B6A00011C594 = {
 			isa = PBXGroup;
 			children = (
 				38FD6B391AD7B6A00011C594 /* Carthage-ReactiveCocoa */,
 				38FD6B531AD7B6A00011C594 /* Carthage-ReactiveCocoaTests */,
 				38FD6B381AD7B6A00011C594 /* Products */,
+				99D136B887930BDC14C6DC2C /* Pods */,
+				5BC00C7172887F65A7E1CE65 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +121,7 @@
 			children = (
 				38FD6B3E1AD7B6A00011C594 /* AppDelegate.h */,
 				38FD6B3F1AD7B6A00011C594 /* AppDelegate.m */,
+				38A259131ADA481F00847BB1 /* Conventional */,
 				38A1A0941AD8B35700B89BFB /* Reactive Controller */,
 				38A1A0951AD8B36A00B89BFB /* Views */,
 				38FD6B3A1AD7B6A00011C594 /* Supporting Files */,
@@ -135,6 +155,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5BC00C7172887F65A7E1CE65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9083A5D14158FBC3C11CFA32 /* Pods_Carthage_ReactiveCocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99D136B887930BDC14C6DC2C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2C0A412F5C145BE2BAAD095E /* Pods-Carthage-ReactiveCocoa.debug.xcconfig */,
+				DF6CF069D9186ABFEF2D1DF8 /* Pods-Carthage-ReactiveCocoa.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,9 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38FD6B5A1AD7B6A00011C594 /* Build configuration list for PBXNativeTarget "Carthage-ReactiveCocoa" */;
 			buildPhases = (
+				18788D22B7897EC1C13E0BF9 /* Check Pods Manifest.lock */,
 				38FD6B331AD7B6A00011C594 /* Sources */,
 				38FD6B341AD7B6A00011C594 /* Frameworks */,
 				38FD6B351AD7B6A00011C594 /* Resources */,
+				1946EF7DE8FBE0AD4BE75A47 /* Embed Pods Frameworks */,
+				9EA949CC375CC2EB52022069 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -230,13 +270,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		18788D22B7897EC1C13E0BF9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1946EF7DE8FBE0AD4BE75A47 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Carthage-ReactiveCocoa/Pods-Carthage-ReactiveCocoa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EA949CC375CC2EB52022069 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Carthage-ReactiveCocoa/Pods-Carthage-ReactiveCocoa-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		38FD6B331AD7B6A00011C594 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38FD6B431AD7B6A00011C594 /* ViewController.m in Sources */,
+				38FD6B431AD7B6A00011C594 /* ReactViewController.m in Sources */,
 				38FD6B401AD7B6A00011C594 /* AppDelegate.m in Sources */,
+				38A259161ADA483A00847BB1 /* ConventionalViewController.m in Sources */,
 				38FD6B3D1AD7B6A00011C594 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,6 +448,7 @@
 		};
 		38FD6B5B1AD7B6A00011C594 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C0A412F5C145BE2BAAD095E /* Pods-Carthage-ReactiveCocoa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Carthage-ReactiveCocoa/Info.plist";
@@ -369,6 +459,7 @@
 		};
 		38FD6B5C1AD7B6A00011C594 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF6CF069D9186ABFEF2D1DF8 /* Pods-Carthage-ReactiveCocoa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Carthage-ReactiveCocoa/Info.plist";

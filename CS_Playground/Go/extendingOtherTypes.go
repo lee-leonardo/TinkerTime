@@ -3,6 +3,7 @@ import (
   "fmt"
   )
 
+//This shows a method being associated with a named type.
 type CustomFloats float64
 
 func (f CustomFloat) Abs() float64 {
