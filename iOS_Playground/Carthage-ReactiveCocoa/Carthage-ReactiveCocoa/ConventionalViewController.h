@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ConventionalViewController : UIViewController
+@interface ConventionalViewController : UIViewController <UITextFieldDelegate>
+
+@property (nonatomic, strong) IBOutlet UITextField *username;
+@property (nonatomic, strong) IBOutlet UITextField *emailField;
+@property (nonatomic, strong) IBOutlet UITextField *passwordField;
+@property (nonatomic, strong) IBOutlet UIButton *buttonEnabled;
 
 @end

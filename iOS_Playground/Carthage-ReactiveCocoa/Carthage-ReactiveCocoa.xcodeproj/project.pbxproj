@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		388795ED1ADB16A50055D7C6 /* UIViewController+SetupSimplicity.m in Sources */ = {isa = PBXBuildFile; fileRef = 388795EC1ADB16A50055D7C6 /* UIViewController+SetupSimplicity.m */; };
 		38A259161ADA483A00847BB1 /* ConventionalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A259151ADA483A00847BB1 /* ConventionalViewController.m */; };
 		38FD6B3D1AD7B6A00011C594 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FD6B3C1AD7B6A00011C594 /* main.m */; };
 		38FD6B401AD7B6A00011C594 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FD6B3F1AD7B6A00011C594 /* AppDelegate.m */; };
@@ -30,6 +31,8 @@
 
 /* Begin PBXFileReference section */
 		2C0A412F5C145BE2BAAD095E /* Pods-Carthage-ReactiveCocoa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carthage-ReactiveCocoa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Carthage-ReactiveCocoa/Pods-Carthage-ReactiveCocoa.debug.xcconfig"; sourceTree = "<group>"; };
+		388795EB1ADB16A50055D7C6 /* UIViewController+SetupSimplicity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SetupSimplicity.h"; sourceTree = "<group>"; };
+		388795EC1ADB16A50055D7C6 /* UIViewController+SetupSimplicity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SetupSimplicity.m"; sourceTree = "<group>"; };
 		38A259141ADA483A00847BB1 /* ConventionalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConventionalViewController.h; sourceTree = "<group>"; };
 		38A259151ADA483A00847BB1 /* ConventionalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConventionalViewController.m; sourceTree = "<group>"; };
 		38FD6B371AD7B6A00011C594 /* Carthage-ReactiveCocoa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Carthage-ReactiveCocoa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,6 +71,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		388795EE1ADB16AD0055D7C6 /* UIViewControllerCategory */ = {
+			isa = PBXGroup;
+			children = (
+				388795EB1ADB16A50055D7C6 /* UIViewController+SetupSimplicity.h */,
+				388795EC1ADB16A50055D7C6 /* UIViewController+SetupSimplicity.m */,
+			);
+			name = UIViewControllerCategory;
+			sourceTree = "<group>";
+		};
 		38A1A0941AD8B35700B89BFB /* Reactive Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +133,7 @@
 			children = (
 				38FD6B3E1AD7B6A00011C594 /* AppDelegate.h */,
 				38FD6B3F1AD7B6A00011C594 /* AppDelegate.m */,
+				388795EE1ADB16AD0055D7C6 /* UIViewControllerCategory */,
 				38A259131ADA481F00847BB1 /* Conventional */,
 				38A1A0941AD8B35700B89BFB /* Reactive Controller */,
 				38A1A0951AD8B36A00B89BFB /* Views */,
@@ -325,6 +338,7 @@
 			files = (
 				38FD6B431AD7B6A00011C594 /* ReactViewController.m in Sources */,
 				38FD6B401AD7B6A00011C594 /* AppDelegate.m in Sources */,
+				388795ED1ADB16A50055D7C6 /* UIViewController+SetupSimplicity.m in Sources */,
 				38A259161ADA483A00847BB1 /* ConventionalViewController.m in Sources */,
 				38FD6B3D1AD7B6A00011C594 /* main.m in Sources */,
 			);
