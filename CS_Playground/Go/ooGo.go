@@ -7,6 +7,9 @@ type User struct {
   Age int
 }
 
+// When creating methods for types and structs, it is better to use a pointer as below.
+// If you do it without a pointer it will copy the whole value and will not mutate the original.
+// If you just need to read a value, not using a pointer is fine.
 func (u *User) Over18() bool {
   return (u.Age >= 18)
 }

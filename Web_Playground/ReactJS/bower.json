@@ -1,0 +1,17 @@
+{
+  "name": "Learn-React",
+  "version": "0.0.1",
+  "homepage": "https://github.com/lee-leonardo/TinkerTime",
+  "authors": [
+    "Leonardo Lee <lee.leonardo.king@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
