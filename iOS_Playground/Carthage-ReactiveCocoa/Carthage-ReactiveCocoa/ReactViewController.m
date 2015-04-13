@@ -11,6 +11,8 @@
 
 @interface ReactViewController ()
 
+@property (nonatomic, strong) UILabel *lengthCount;
+
 @end
 
 @implementation ReactViewController
@@ -30,6 +32,17 @@
                                              }];
     
     RAC(self, self.buttonEnabled.enabled) = formValid;
+    
+    _lengthCount = [[UILabel alloc] initWithFrame:CGRectMake(self.view.frame.size.width/2 + 16, 0, 44, 30)];
+    
+    [self.view addSubview:_lengthCount];
+    [self updateLength];
+}
+
+-(void)updateLength {
+    [RACObserve(self, self.username.text) subscribeNext:^(NSString *string) {
+        self.lengthCount.text = [NSString stringWithFormat:@"%lu", (unsigned long)[string length]];
+    }];
 }
 
 

@@ -1,0 +1,13 @@
+--- # User
+  firstName: Leonardo
+  lastName: Lee
+  age: 24
+
+--- # Unit
+  descriptor: soldier
+  statistics:
+    - mind: 3
+    - body: 5
+    - soul: 2
+
+  traits: [guardian, shield(1)]
