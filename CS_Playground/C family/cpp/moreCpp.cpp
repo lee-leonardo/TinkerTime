@@ -13,7 +13,10 @@ int main () {
   //Lists can be used for conversion (if you do not want to typecast);
   int i = {7.8}; //Will produce a warning that this value is losing precision.
   string statement = {"This is a list of characters, aka a string"};
+
+  //Auto is greate for the creation of generic types and such.
   auto likeVar = 'x'; //Like var in javascript, auto implicitly sets the type.
+
 
   cout << i;
   cout << likeVar;
@@ -24,4 +27,5 @@ int main () {
   cout << "There shouldn't be anything after the colon: " << createdObj -> name;
 
   delete createdObj;
+
 }
