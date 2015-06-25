@@ -79,4 +79,6 @@ int main() {
     cout << "The value isNull is null!";
   };
 
+
+// cin is input!
 }
