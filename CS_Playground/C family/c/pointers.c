@@ -65,9 +65,18 @@ void pointersAndArrays() {
   int pointerAccess =*(a+i);  //This is a bool.
   //Interestingly enough a[i] is converted to *(a+i) with array subscripting
   if (arrayAccess == pointerAccess) {
-    println("Cool");
+    printf("Cool");
   }
+}
 
+//This iterates through the pointer, incrementing the position by 1 each time counting each character.
+int lengthOfString(char *string) {
+  int n;
+  //String++ increments the copy of the pointer,, this is different than *string++ (which would grab the value of string and add 1).
+  for (n = 0; *string != '\0'; string++) {
+    n++;
+  }
+  return n;
 }
 
 // int findString(char *input, char *find) {
