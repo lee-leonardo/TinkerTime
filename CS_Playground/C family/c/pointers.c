@@ -134,5 +134,18 @@ void stringComparison(char *newPointer, char *oldPointer) {
   sum = newPointer[iterator] - oldPointer[iterator];
 
   //Poitner version
-
+  for (; *newPointer == *oldPointer; newPointer++, oldPointer++) {
+    if (*newPointer == '\0') {
+      sum = 0;
+    }
+  }
+  sum = *newPointer - *oldPointer;
 }
+
+/*
+  For stacks:
+  //Push
+  *p++ = val;
+  //Pop
+  val = *--p;
+*/
