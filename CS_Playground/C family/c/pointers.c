@@ -79,9 +79,11 @@ int lengthOfString(char *string) {
   return n;
 }
 
-// int findString(char *input, char *find) {
-//
-//   int i = 0;
-//   while ((*find[i]++ = *input[i]++) != '\0') {
-//   }
-// }
+int substringLength(char *start, char *charToFind) {
+  char *loc = start;
+
+  while(loc != charToFind && loc != '\0') {
+    loc++;
+  }
+  return loc - start; // This is possible because both loc and start are positions in a string, like an address.
+}
