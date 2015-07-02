@@ -12,12 +12,19 @@ void additionalPointers();
 void pointersAndArrays();
 int lengthOfString(char *string);
 int substringLength(char *start, char *charToFind);
-// int findString(char *input, char *find);
+void stringCopy(char *newPointer, char *oldString);
+void stringComparison(char *newPointer, char *oldPointer);
 
  int main(void) {
    basicPointers();
    additionalPointers();
    pointersAndArrays();
+   lengthOfString("this is a string");
+   substringLength("this is a string", 's');
+   stringCopy("this should work", 's');
+
+   char *prettyAwesome = "";
+   stringComparison(prettyAwesome, "old regalia");
 
    return 0;
  }
@@ -100,6 +107,7 @@ int substringLength(char *start, char *charToFind) {
   1.2. The conditional is evaluated.
   2. Loop continutes.
 */
+
 // s = t would copy the pointer (the address to the start of t), not the string itself.
 // The reason why we can assign these values is because we are not copying but passing in the values via atheir address.
 void stringCopy(char *newPointer, char *oldString) {
