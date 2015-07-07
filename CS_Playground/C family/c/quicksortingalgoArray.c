@@ -52,3 +52,5 @@ void writelines(char *linePointer[], int nlines) {
     printf("%s\n", linePointer[i]);
   }
 }
+
+//get line is section 1.9... do this later.
