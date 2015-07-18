@@ -35,9 +35,9 @@ void removeNode(struct node *current, int value) {
 
 }
 
-struct head mockNdes() {
+struct head mockNodes() {
   struct head start;
-  
+
 
   return start;
 }
