@@ -28,10 +28,17 @@ void findValueInTree(struct node *current, int value) {
 }
 
 void addNode(struct node *current, int value) {
+  struct node node;
+  node.last = current;
+  *current->next = node;
 
 }
 
 void removeNode(struct node *current, int value) {
+
+}
+
+void removeLastNode(struct node *current, int valueToRemove) {
 
 }
 
