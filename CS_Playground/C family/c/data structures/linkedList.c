@@ -23,14 +23,15 @@ struct node {
   int value;
 };
 
-void findValueInTree(struct node *current, int value) {
+void findValueInTree(struct head *head, int value) {
 
 }
 
 void addNode(struct node *current, int value) {
   struct node node;
   node.last = current;
-  *current->next = node;
+  node.value = value;
+  current->next = &node; //struct->member is the same as (*struct).member
 
 }
 
@@ -38,7 +39,11 @@ void removeNode(struct node *current, int value) {
 
 }
 
-void removeLastNode(struct node *current, int valueToRemove) {
+void addValueToList(struct head *head, int value) {
+
+}
+
+void removeValueFromList(struct node *current, int value) {
 
 }
 
@@ -47,4 +52,14 @@ struct head mockNodes() {
 
 
   return start;
+}
+
+/*
+  Sorting Functions
+*/
+void highLow() {
+
+}
+void lowHigh() {
+
 }
