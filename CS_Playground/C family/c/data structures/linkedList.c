@@ -5,6 +5,9 @@
 // #include <stdio.h>
 #include <stdlib.h>
 
+typedef struct head Head;
+typedef struct node Node;
+
 struct head;
 struct node;
 
