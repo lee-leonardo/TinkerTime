@@ -181,3 +181,4 @@ pubspec.lock
 
 # Java
 CS_Playground/Java/*.class
+CS_Playground/*/*.class
