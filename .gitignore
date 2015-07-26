@@ -178,3 +178,6 @@ pubspec.lock
 *.exe
 *.out
 *.app
+
+# Java
+CS_Playground/Java/*.class
