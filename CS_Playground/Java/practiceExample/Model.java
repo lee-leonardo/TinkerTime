@@ -1,5 +1,4 @@
 public class Model {
-
   boolean live;
 
   public Model() {
