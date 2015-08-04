@@ -74,3 +74,13 @@ class Neat {
   2. Needs to have a different arguments.
   3. Access can become more restrictive or free.
 */
+
+
+// Final Classes cannot be inherited from.
+final class Immaculate {
+  //This class cannot have a subclass.
+  final boolean isFinal = true; //This value cannot be changed in it's lifetime.
+  //AKA immutable, this is different than static which acts as constants than can be manipulated with the static block.
+  // Both modifiers are usable on the same member.
+  // Static declares the value as global (respecting the 'namespace' or the scope that it is in). It affects things class-wide where normally values are via instance.
+}

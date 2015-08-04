@@ -3,12 +3,18 @@
   Classes with a initializer are called concrete classes.
   Classes can have only one superclass and any number of interfaces.
   This was to avoid problems with multiple inheritance and the ambiguities that arise from it.
+
+  Polymorphism uses an important Java feature:
+    * Dynamic method dispatch, which how Java handles overridden methods in runtime rather than compile time.
+    * Polymorphism and method overriding is based on the arguments in Java, if a subclass does not overide a method, then it calls the superclasses.
+    * This means that the compiler checks the legality of the methods, at runtime it is decided based on the lowest overidden method.
 */
 abstract class Problem {
 
   /*
     Abstract methods must be overridden, and an Abstract method means that the class must be abstract.
     It also means that the inheriting class must implement the abstract method.
+    The abstract modifier cannot be used on static methods or constructors
   */
   public abstract void ponder();
 
