@@ -1,8 +1,8 @@
 public class GameMatch {
   private Roster teamA;
-  private Roste teamB;
+  private Roster teamB;
 
   public static void (String[] args) {
-
+ 
   }
 }
