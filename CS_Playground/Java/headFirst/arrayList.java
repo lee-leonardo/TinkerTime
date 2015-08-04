@@ -8,4 +8,9 @@ public class Fullname {
     //With an import statement
     ArrayList<int> newList = new ArrayList();
   }
+
+  // Returns an ArrayList, but also accepts an arrayList as a parameter.
+  java.util.ArrayList<int> fullNameFunction( java.util.ArrayList<int> list) {
+    return list;
+  }
 }
