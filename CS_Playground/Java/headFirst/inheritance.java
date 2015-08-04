@@ -42,6 +42,11 @@ class Neat {
     SuperClass[] classes = new SuperClass[2];
     classes[0] = new SuperClass();
     classes[1] = new Inheritor();
+
+    // How to check if an object is of a type, not to mention you can cast types).
+    if (classes[1] instanceof Inheritor ) {
+      Inheritor inherited = classes[1];
+    }
   }
 
   // Super valuable from polymorphism.
