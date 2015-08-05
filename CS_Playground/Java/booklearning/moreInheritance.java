@@ -48,6 +48,7 @@ class Example extends Problem {
 
 /*
   Interfaces allow for multiple inheritance.
+  An interface is a set of methods that will be implemented by another class.
   An interface is entirely abstract, unlike an abstract class which can have concrete properties.
   Interfaces by default are public and abstract.
 */
