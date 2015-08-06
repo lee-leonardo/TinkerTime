@@ -47,13 +47,46 @@ class Example extends Problem {
 }
 
 /*
-  Interfaces allow for multiple inheritance.
-  An interface is a set of methods that will be implemented by another class.
-  An interface is entirely abstract, unlike an abstract class which can have concrete properties.
-  Interfaces by default are public and abstract.
+  Interface - specifies what must be done, not how to do it.
+    * Interfaces allow for multiple inheritance.
+    * An interface is a set of methods that will be implemented by another class.
+    * An interface is entirely abstract, unlike an abstract class which can have concrete properties.
+    * Interfaces are default (or public) and abstract.
+  Using an Interface
+    * when a class implements an interface a class must provide bodies for the methods described by the interface.
+    * methods declared in an interface are implicitly public
+    * implemented methods must be declared public and have the same type.
+    * Variables are implicitly final, public, and static.
+    * If a class implements a interface but doesn't fully implement the methods, then the class must be declared as abstract.
+    * Interface variables can be created as a reference. This type can hold any class that implements the interface.
+      * AKA treat it like a superclass to a subclass.
+  Usecase: Constants (Controversial)
+    * Interfaces provide an excellent way to manage constants.
+    * Variables in an interface are: public static final
+    * Each file that requires the constants need only to implement the interface.
+  Extensibility
+    * Interfaces can be extended.
+    * The implementing class needs to provide implementation for hte whole interface inheritance chain.
+  Default Implementations
+    * Interfaces cannot maintain state information.
+    * No instance variables
+    * Great for default error messaging.
+    * Cleans up code by removing placeholders in classes that don't need that part of an interface.
+    * Super of an interface: Interfacename.super.methodName()
+  Static methods
+    * Called directly from interface, independent from an objects
+    * not inherited by implementing class or a subinterface.
 */
 public abstract interface Query {
   public abstract void investigate();
+}
+
+public interface Question extends Query {
+  public void postulate();
+
+  default String answer() {
+    return "None";
+  }
 }
 
 class Exploration extends Example implements Query {
