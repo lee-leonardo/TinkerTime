@@ -72,3 +72,30 @@ void reallocKnow() {
   free(name);
   free(reallocatedMemory);
 }
+
+/*
+  Notes about freeing pointers:
+    * Dereferencing a freed pointer leads to undefined behavior.
+    * Do not assign null to a freed pointer! This is a runtime exception.
+    * Do not free() a pointer twice, this will cause a runtime exception.
+    * Freed pointers can still be used (runtime systems will not restrict access or modification), however behavior of use is undefined.
+
+  The heap is managed by the OS.
+  As a programmer you only need to free up and manage memory until the program terminates.
+  The OS should take care of the rest.
+    * Technically you as a programmer don't ever need to free up memoery as the OS will take care of it...
+    * This is obviously bad practice. Simpler OSs might have less protection against poor programming practices.
+*/
+/*
+  Dangling Pointer
+    1. Happens when two memory addresses (A & B) reference the same allocated memory (term: Aliasing).
+    2. The memory is freed via one pointer (A), and potentially is garbage collected.
+    3. The other memory address (B), still holds a reference, thus runtime allows potenial access -> undefined behavior.
+    * Caveats: This can happen when a local variable is the reference of a pointer in a lower stack. Once that frame pops, it is a dangling pointer situation.
+*/
+/*
+  KISS
+  * Garbage Collection is a good thing to think about.
+  * Also RAII.
+  * Exception Handling
+*/

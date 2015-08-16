@@ -157,3 +157,21 @@ void stringComparison(char *newPointer, char *oldPointer) {
   //Pop
   val = *--p;
 */
+
+/*
+  Last thoughts on pointers
+    1. Pointers are initialized like variables, but the * in initialization indicates it is a pointer to the value type.
+      * Prototype: type * variableName = &variableAddress
+    2. The value of a pointer is the address (accessed by the address operator) of a variable.
+      * Example: p1 = &val1
+      A. Since the value pointers are addresses the address operator (&), we can treat it like normal assignment.
+        * Example: p1 = p2
+    3. One accesses the value pointed to by the pointer by a consequent use of a * after initialization.
+      * Usage: type newVariable = value + *p1
+      * Re-assignment: *p1 = anotherValue
+    4. Pointers have their own addresses, which are accessed by the address operator (&).
+*/
+
+/*
+  Analogy: Email, and Email Forwarding
+*/
