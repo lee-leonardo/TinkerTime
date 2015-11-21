@@ -64,7 +64,7 @@ void PrintContentsWithArray(int *arrPtr, const int length) {
       printf("%i, ", *arrPtr);
     }
     else if (i < (length)) {
-      printf("%i\n", *arrPtr);
+      printf("%i", *arrPtr);
     }
     arrPtr++;
   }

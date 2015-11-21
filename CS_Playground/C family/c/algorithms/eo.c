@@ -31,5 +31,6 @@ void EveryOtherBubbleSort(int arrayToSort[], const int length) {
 
       if (EveryOtherCheck(*left, *right)) Swap(left, right);
     }
+    // PrintContentsWithArray(&arrayToSort[0], length);         /* This is good for testing */
   }
 }
