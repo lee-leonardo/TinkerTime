@@ -1,6 +1,9 @@
-#include "bubble.c"
+#include "bubble.h"
 #include "eo.c"
 #include <stdio.h>
+
+void BubbleExample(void);
+void EveryOtherExample(void);
 
 int main (void) {
   // BubbleExample();
@@ -25,6 +28,6 @@ void EveryOtherExample(void) {
   int arrayLength = sizeof(array) / sizeof(array[0]);
 
   PrintContentsWithArray(&array[0], arrayLength);
-  EveryOtherSort(array, arrayLength);
+  EveryOtherBubbleSort(array, arrayLength);
   PrintContentsWithArray(&array[0], arrayLength);
 }

@@ -1,3 +1,4 @@
+#include "bubble.h"
 #include <stdio.h>
 
 void Swap (int * left, int * right);

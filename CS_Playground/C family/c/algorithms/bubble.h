@@ -1,6 +1,3 @@
-#include "bubble.c"
-#include <stdio.h>
-
 void Swap (int * left, int * right);
 void Bubble(int arrayToSort[], const int length);
 int  LGreaterThanR(const int left, const int right);

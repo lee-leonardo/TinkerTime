@@ -1,32 +1,19 @@
-// #include "bubble.h"
+#include "Boolean.h"
+#include "bubble.h"
 #include <stdio.h>
-
-#ifndef BOOLEAN_H_
-#define BOOLEAN_H_
-
-#ifndef __cplusplus
-#undef bool
-#undef true
-#undef false
-
-typedef int bool;
-enum { false = 0, true = 1 };
-#endif
-
-#endif
 
 bool EveryOtherCheck(const int left, const int right);
 void EveryOtherBubbleSort(int arrayToSort[], const int length);
 
-// int main (void) {
-//   printf("Start of Bubble Sort testing.\n");
-//   int array[] = {8,7,6,5,4,3,2,1};
-//   int arrayLength = sizeof(array) / sizeof(array[0]);
-//   PrintContentsWithArray(&array[0], arrayLength);
-//   EOBubbleSort(array, arrayLength);
-//   PrintContentsWithArray(&array[0], arrayLength);
-//   return 0;
-// }
+int main (void) {
+  printf("Start of Bubble Sort testing.\n");
+  int array[] = {8,7,6,5,4,3,2,1};
+  int arrayLength = sizeof(array) / sizeof(array[0]);
+  PrintContentsWithArray(&array[0], arrayLength);
+  EveryOtherBubbleSort(array, arrayLength);
+  PrintContentsWithArray(&array[0], arrayLength);
+  return 0;
+}
 
 bool EveryOtherCheck(const int left, const int right) {
   if (left % 2 != 0 && right % 2 == 0) return true;
