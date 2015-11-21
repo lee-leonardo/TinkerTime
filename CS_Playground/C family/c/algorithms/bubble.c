@@ -6,19 +6,17 @@ int  LGreaterThanR(const int left, const int right);
 void PrintContentsWithArray(int *arrPtr, const int length);
 void PrintContentsWithPointer(int *arrPtr);                   //TODO - Not working properly... continues on looking at out of bounds
 
-int main (void) {
-  printf("Start of Bubble Sort testing.\n");
-  int array[] = {8,7,6,5,4,3,2,1};
-  int arrayLength = sizeof(array) / sizeof(array[0]);
-
-  PrintContentsWithArray(&array[0], arrayLength);
-  // PrintContentsWithPointer(&array[0]);
-  Bubble(array, arrayLength);
-  PrintContentsWithArray(&array[0], arrayLength);
-  // PrintContentsWithPointer(&array[0]);
-
-  return 0;
-}
+// int main (void) {
+//   printf("Start of Bubble Sort testing.\n");
+//   int array[] = {8,7,6,5,4,3,2,1};
+//   int arrayLength = sizeof(array) / sizeof(array[0]);
+//   PrintContentsWithArray(&array[0], arrayLength);
+//   // PrintContentsWithPointer(&array[0]);
+//   Bubble(array, arrayLength);
+//   PrintContentsWithArray(&array[0], arrayLength);
+//   // PrintContentsWithPointer(&array[0]);
+//   return 0;
+// }
 
 /*
 Bubble Sort
