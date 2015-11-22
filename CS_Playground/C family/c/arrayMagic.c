@@ -4,7 +4,14 @@
 // Other than that, it is understood that the array is ended by a null terminating character.
 
 #include <stdio.h>
+#define ARRAY_LEN 6
 
 int main (void) {
-  
+  // int hello[] = {0,1,2,3,4,5};
+  // int tryAssign[] = hello;
+  //
+  // for (int i = 0; i < ARRAY_LEN; i++) {
+  //   printf("%i ", hello[i]);
+  // }
+  return 0;
 }
